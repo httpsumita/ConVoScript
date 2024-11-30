@@ -28,5 +28,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     # path('',home), #when someone is in base page it will trigger home() function 
     # path('room/',room),
-    path('',include('base.urls'))
+    path('',include('base.urls')),
+    path('api/',include('base.api.urls'))
     ]
